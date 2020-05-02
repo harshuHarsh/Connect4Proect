@@ -21,12 +21,12 @@ public class Connect4
 	        	{
 		        	 Dropcoin.dropYellow();
 		        	 Board.printgrid();
-		        	 if(!CheckWin.CheckX())
+		        	 if(!CheckWin.CheckRed())
 			 	        {
 			 	        	CheckWin.flag = false; 
 			                 break; 
 			             }
-			 	        if(!CheckWin.CheckO())
+			 	        if(!CheckWin.CheckYellow())
 			 	        {
 			 	        	CheckWin.flag = false; 
 			                 break; 
@@ -37,12 +37,12 @@ public class Connect4
 		        {
 	        		 Dropcoin.dropRed();		        		
 		        	 Board.printgrid();
-		        	 if(!CheckWin.CheckX())
+		        	 if(!CheckWin.CheckRed())
 			 	        {
 			 	        	CheckWin.flag = false; 
 			                 break; 
 			             }
-			 	        if(!CheckWin.CheckO())
+			 	        if(!CheckWin.CheckYellow())
 			 	        {
 			 	        	CheckWin.flag = false; 
 			                 break; 
@@ -62,12 +62,12 @@ public class Connect4
 	        	{
 		        	 Dropcoin.dropRed(); 
 		        	 Board.printgrid();
-		        	 if(!CheckWin.CheckX())
+		        	 if(!CheckWin.CheckRed())
 			 	        {
 			 	        	CheckWin.flag = false; 
 			                 break; 
 			             }
-			 	        if(!CheckWin.CheckO())
+			 	        if(!CheckWin.CheckYellow())
 			 	        {
 			 	        	CheckWin.flag = false; 
 			                 break; 
@@ -80,12 +80,12 @@ public class Connect4
 	        		
 	        		 Dropcoin.dropYellow();
 		        	 Board.printgrid();
-		        	 if(!CheckWin.CheckX())
+		        	 if(!CheckWin.CheckRed())
 			 	        {
 			 	        	CheckWin.flag = false; 
 			                 break; 
 			             }
-			 	        if(!CheckWin.CheckO())
+			 	        if(!CheckWin.CheckYellow())
 			 	        {
 			 	        	CheckWin.flag = false; 
 			                 break; 
