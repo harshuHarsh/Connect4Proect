@@ -386,7 +386,7 @@ public class CheckWin extends Board
 	        return flag;
 	    }
 
-	    public static boolean CheckX()
+	    public static boolean CheckRed()
 	    {
 	       
 	        boolean flag = true;
@@ -397,7 +397,7 @@ public class CheckWin extends Board
 	        return flag;
 	    }
 
-	    public static boolean CheckO()
+	    public static boolean CheckYellow()
 	    {
 	
 	        boolean flag = true;
