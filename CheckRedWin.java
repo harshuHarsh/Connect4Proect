@@ -82,21 +82,21 @@ public class CheckRedWin extends Board {
 	        int checkRow = 1;
 
 	        while(flag)
-		{ 
+	        { 
 	            for(int w = 0; rows > w; w += 1)
-		    {
+	            {
 	                for(int h = 0; columns > h; h += 1)
-			{
+	                {
 	                    if(grid[w][h] == 'R')
-			    { 
+	                    { 
 	                        counter += 1;
 	                        check = true;
 	                        while(check)
-				{
+	                        {
 	                            if(checkColumn + w <= rows - 1&& checkRow + h <= columns - 1)
-				    {
+	                            {
 	                                if(grid[w + checkColumn][h + checkRow] == 'R')
-					{ 
+	                                { 
 	                                    counter += 1;
 	                                }
 	                            }

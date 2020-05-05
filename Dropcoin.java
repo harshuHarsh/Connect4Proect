@@ -6,12 +6,12 @@ public class Dropcoin extends Board
 {
 	public static Scanner scanner = new Scanner(System.in);
 	static int i=1;
-	static int count=1;
+	
 	static int c=0; 
 	
  	public static void dropRed()
     {   
- 		  
+ 		int count=1;
  		if(i>=3)
  		{
 	 		c=i%2;
