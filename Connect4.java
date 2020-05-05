@@ -16,43 +16,11 @@ public class Connect4
     	
     	
     }
-    public void anotherGame(char c2)
-    {
-    	
-    	
-		CheckYellowWin.flag=true;
-		CheckRedWin.flag=true;
-    	System.out.println("Do you want to play  game, Please Type Yes or No (for yes and NO)"+"\n");
-    	Scanner scanner = new Scanner(System.in);
-    	String option = scanner.nextLine(); 
-    	char c1 =option.charAt(0);
-    	
-    	if(c1=='Y')
-    	{
-    		new Connect4();
-    	}
-    	else
-    	{
-    		if(c2=='R')
-    		{
-	    		System.out.println("Total games won" + " " +wincount1);
-	    		System.exit(0);
-    		}
-    		else
-    		{
-    			System.out.println("Total games won" + " " +wincount);
-        		System.exit(0);
-    			
-    		}
-    		
-    		
-    	}
-    	
-    }
+   
     
     public Connect4()
     {
-    	Dropcoin.i=1;
+    	Dropyellow.i=1;
     	System.out.println("Select one from 1 - 6 to drop your coin"+"\n");
     	Board b=Board.createInstance();
     	b.Creategrid();
@@ -66,9 +34,9 @@ public class Connect4
 	        if(c=='Y')
 	        {
 	        	
-	        	if(Dropcoin.i%2==1)
+	        	if(Dropyellow.i%2==1)
 	        	{
-		        	 Dropcoin.dropYellow();
+		        	 Dropyellow.dropYellow();
 		        	 b.printgrid();
 		        	 if(!CheckRedWin.CheckRed())
 			 	        {
@@ -86,9 +54,9 @@ public class Connect4
 			             }
 		 	        
 	            }
-	        	if(Dropcoin.i%2==0)
+	        	if(Dropyellow.i%2==0)
 		        {
-	        		 Dropcoin.dropRed();		        		
+	        		 DropRed.dropRed();		        		
 		        	 b.printgrid();
 		        	 if(!CheckRedWin.CheckRed())
 			 	        {
@@ -114,9 +82,9 @@ public class Connect4
 	        if(c=='R')
 	        {
 	        	
-	        	if(Dropcoin.i%2==1)
+	        	if(Dropyellow.i%2==1)
 	        	{
-		        	 Dropcoin.dropRed(); 
+		        	 DropRed.dropRed(); 
 		        	 b.printgrid();
 		        	 if(!CheckRedWin.CheckRed())
 			 	        {
@@ -135,10 +103,10 @@ public class Connect4
 		 	        
 	        	
 	        	}
-	        	if(Dropcoin.i%2==0)
+	        	if(Dropyellow.i%2==0)
 		        {
 	        		
-	        		 Dropcoin.dropYellow();
+	        		 Dropyellow.dropYellow();
 		        	 b.printgrid();
 		        	 if(!CheckRedWin.CheckRed())
 			 	        {
@@ -162,7 +130,7 @@ public class Connect4
         }
         if(c=='R')
         {
-        	anotherGame(c);
+        	NextGame.anotherGame(c);
         }
     	
     }

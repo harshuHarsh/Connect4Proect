@@ -22,7 +22,7 @@ public class CheckYellowWin extends Board
 	                        counter = 0; 
 	                    }
 	                    if(counter >= 4){
-	                    	 System.out.println("Player" + Dropcoin.c +" "+ "wins"); 
+	                    	 System.out.println("Player" + Dropyellow.c +" "+ "wins"); 
 	                        flag = false;
 	                    }
 	                }
@@ -55,7 +55,7 @@ public class CheckYellowWin extends Board
 	                    }
 	                    if(counter >= 4)
 	                    {
-	                    	 System.out.println("Player" + Dropcoin.c +" "+ "wins");
+	                    	 System.out.println("Player" + Dropyellow.c +" "+ "wins");
 	                        flag = false;
 	                    }
 	                }
@@ -106,7 +106,7 @@ public class CheckYellowWin extends Board
 
 	                            if(counter >= 4)
 	                            {
-	                            	 System.out.println("Player" + Dropcoin.c +" "+ "wins"); 
+	                            	 System.out.println("Player" + Dropyellow.c +" "+ "wins"); 
 	                                check = false;
 	                                flag = false;
 	                                break;
@@ -170,7 +170,7 @@ public class CheckYellowWin extends Board
 
 	                            if(counter >= 4)
 	                            {
-	                            	 System.out.println("Player" + Dropcoin.c +" "+ "wins"); 
+	                            	 System.out.println("Player" + Dropyellow.c +" "+ "wins"); 
 	                                check = false;
 	                                flag = false;
 	                                break;
